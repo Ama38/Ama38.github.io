@@ -1,0 +1,43 @@
+.clicker-button {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    background-color: #c9b1b1;
+}
+
+.clicker-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.clicker-number {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    font-size: 4vh;
+    font-weight: bold;
+    pointer-events: none;
+    animation: moveUp 2s ease-out forwards, fadeOut 2s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10vh);
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
